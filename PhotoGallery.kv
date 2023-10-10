@@ -1,0 +1,20 @@
+Display
+
+<Display>
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "Jonnyboy's Silly Little Photos That Do Not Belong to Him"
+            size_hint: 1, 0.2
+        Image:
+            id: image
+            source: root.display()
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, 0.2
+            Button:
+                text: "Previous"
+                on_press: root.prev()
+            Button:
+                text: "Next"
+                on_press: root.next()

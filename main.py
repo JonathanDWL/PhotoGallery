@@ -1,0 +1,2 @@
+class PhotoGalleryApp(App):
+    pass

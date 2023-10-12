@@ -1,0 +1,35 @@
+MainScreen
+
+<MainScreen>
+    BoxLayout:
+        orientation: "vertical"
+        GridLayout:
+            cols: 2
+            TextInput:
+                id: filename
+                hint_text: "Image filename"
+            Button:
+                text: "Load Base Image"
+                on_press: root.loadbase(filename.text)
+            Button:
+                text: "Invert"
+                on_press: root.invert(filename.text)
+            Button:
+                text: "Grayscale"
+                on_press: root.grayscale(filename.text)
+            Button:
+                text: "Sepia"
+                on_press: root.sepia(filename.text)
+            Button:
+                text: "Trippy"
+                on_press: root.trippy(filename.text)
+            Button:
+                text: "Lined"
+                on_press: root.lined(filename.text)
+            Button:
+                text: "Pixelate"
+                on_press: root.pixelate(filename.text)
+        Image:
+            id: display
+            source: "notfound.png"
+            size_hint: 1, 3

@@ -11,21 +11,45 @@ MainScreen
             Button:
                 text: "Load Base Image"
                 on_press: root.loadbase(filename.text)
+                background_normal: "greenbutton.png"
+                background_down: "greenbuttondown.png"
+                border: (0, 0, 0, 0)
+                background_color: 0.5, 0.5, 0.5
             Button:
                 text: "Invert"
                 on_press: root.invert(filename.text)
+                background_normal: "greenbutton invert.png"
+                background_down: "greenbuttondown invert.png"
+                border: (0, 0, 0, 0)
+                background_color: 0.5, 0.5, 0.5
             Button:
                 text: "Grayscale"
                 on_press: root.grayscale(filename.text)
+                background_normal: "greenbutton grayscale.png"
+                background_down: "greenbuttondown grayscale.png"
+                border: (0, 0, 0, 0)
+                background_color: 0.5, 0.5, 0.5
             Button:
                 text: "Sepia"
                 on_press: root.sepia(filename.text)
+                background_normal: "greenbutton sepia.png"
+                background_down: "greenbuttondown sepia.png"
+                border: (0, 0, 0, 0)
+                background_color: 0.5, 0.5, 0.5
             Button:
                 text: "Trippy"
                 on_press: root.trippy(filename.text)
+                background_normal: "weirdnoise trippy.png"
+                background_down: "weirdnoise trippy darken.png"
+                border: (0, 0, 0, 0)
+                background_color: 0.6, 0.6, 0.6
             Button:
                 text: "Lined"
                 on_press: root.lined(filename.text)
+                background_normal: "funny line.png"
+                background_down: "funny line darken.png"
+                border: (0, 0, 0, 0)
+                background_color: 0.6, 0.6, 0.6
             Button:
                 text: "Pixelate"
                 on_press: root.pixelate(filename.text)

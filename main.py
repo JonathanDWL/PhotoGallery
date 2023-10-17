@@ -55,7 +55,7 @@ class MainScreen(Screen):
             img.save(image[:image.index(".")] + " grayscale" + image[image.index("."):])
             self.ids.display.source = image[:image.index(".")] + " grayscale" + image[image.index("."):]
         else:
-            self.ids.idsplay.source = "notfound.png"
+            self.ids.display.source = "notfound.png"
 
     def sepia(self, image):
         if(image in images):
@@ -145,7 +145,7 @@ class MainScreen(Screen):
             for y in range(img.size[1]):
                 for x in range(img.size[0]):
                     if (x >= 0 and x <= img.size[0] - 1 and y >= 0 and y <= img.size[1] - 1):
-                        pixels[x, y] = pixels[x // 10 * 10 + 5, y // 10 * 10 + 5]
+                        pixels[x, y] = pixels[(x-img.size[0]) // 10 * 10 + 5, (y-img.size[1]) // 10 * 10 + 5]
             img.save(image[:image.index(".")] + " pixelate" + image[image.index("."):])
             self.ids.display.source = image[:image.index(".")] + " pixelate" + image[image.index("."):]
         else:

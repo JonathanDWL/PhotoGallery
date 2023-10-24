@@ -53,6 +53,11 @@ MainScreen
             Button:
                 text: "Pixelate"
                 on_press: root.pixelate(filename.text)
+                background_normal: "weirdnoise.png"
+                background_down: "weirdnoise darken.png"
+                border: (0, 0, 0, 0)
+                background_color: 0.6, 0.6, 0.6
+
         Image:
             id: display
             source: "notfound.png"
